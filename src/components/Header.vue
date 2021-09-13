@@ -33,10 +33,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 25px 5px;
   }
 
   .logo {
-    width: 150px;
+    width: 75px;
   }
 
   .links {
@@ -47,7 +48,7 @@
 
   .link {
     color: #000;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     text-transform: capitalize;
   }

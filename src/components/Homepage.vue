@@ -29,7 +29,7 @@
 <style scoped>
 
   .container {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 85px);
     background-color: var(--dub-blue);
     display: flex;
     align-items: center;
