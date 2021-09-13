@@ -1,16 +1,22 @@
 <template>
   <Header/>
-  <!-- <HelloWorld msg="Hello Vue 3.0 + Vite" /> -->
+  <Homepage v-show="page == 'homepage'"/>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
+import Homepage from './components/Homepage.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Homepage
+  },
+  data() {
+    return {
+      page: 'homepage',
+    }
   }
 }
 </script>

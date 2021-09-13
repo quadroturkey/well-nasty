@@ -1,0 +1,63 @@
+<template>
+  
+  <div class="container">
+    <div class="video-wrapper">
+      <video width="320" height="240" autoplay loop muted>
+        <source src="../assets/home-background.mp4" type="video/mp4">
+        Your browser does not support video tag
+      </video>
+      <button class="film-btn">film room</button>
+    </div>
+  </div>
+
+</template>
+
+<script>
+
+  export default {
+  name: 'Homepage',
+  data() {
+    return {
+      
+    }
+  },
+
+}
+
+</script>
+
+<style scoped>
+
+  .container {
+    height: calc(100vh - 150px);
+    background-color: var(--dub-blue);
+    display: flex;
+    align-items: center;
+  }
+
+  .video-wrapper {
+    position: relative;
+    width: 100vw;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  .film-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: var(--dub-red);
+    color: #fff;
+    border: none;
+    padding: 0.75em;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+  }
+
+</style>

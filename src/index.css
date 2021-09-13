@@ -1,8 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+:root {
+  --dub-red: #e32526;
+  --dub-blue: #091f3f;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  cursor: url("assets/connor-cursor.png"), auto;
+}
+
+body {
+  margin: 0;
 }

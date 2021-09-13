@@ -11,15 +11,49 @@
 
 <script>
 
-import '../styles/header.css'
-
-export default {
-  name: 'Header',
-  data() {
-    return {
-      links: ["home", "film", "workout"]
+  export default {
+    name: 'Header',
+    data() {
+      return {
+        links: ["home", "film", "workout"]
+      }
+    },
+    methods: {
+      navigate(link) {
+        console.log('link clicked: ', link)
+      }
     }
   }
-}
 
 </script>
+
+<style scoped>
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .links {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .link {
+    color: #000;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+  .link:hover {
+    border-bottom: 2px solid var(--dub-red);
+  }
+
+</style>
