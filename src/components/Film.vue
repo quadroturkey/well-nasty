@@ -15,6 +15,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 10px 25px;
   }
 
   .video-title {

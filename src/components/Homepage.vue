@@ -4,7 +4,7 @@
     <div class="video-wrapper">
       <video width="320" height="240" autoplay loop muted>
         <source src="../assets/home-background.mp4" type="video/mp4">
-        Your browser does not support video tag
+        Your browser does not support the video tag
       </video>
       <button class="film-btn" @click="changePage('film')">film room</button>
     </div>
