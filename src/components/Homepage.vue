@@ -33,6 +33,7 @@
 <style scoped>
 
   .container {
+    position: relative;
     height: calc(100vh - 85px);
     background-color: var(--dub-blue);
     display: flex;
@@ -40,7 +41,8 @@
   }
 
   .video-wrapper {
-    position: relative;
+    position: absolute;
+    top: 50px;
     width: 100vw;
   }
 
@@ -64,6 +66,12 @@
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     transform: translate(-50%, -50%);
+  }
+
+  @media (min-width: 768px) {
+    .video-wrapper {
+      top: 200px;
+    }
   }
 
 </style>
