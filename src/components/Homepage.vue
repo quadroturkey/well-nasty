@@ -6,7 +6,7 @@
         <source src="../assets/home-background.mp4" type="video/mp4">
         Your browser does not support video tag
       </video>
-      <button class="film-btn">film room</button>
+      <button class="film-btn" @click="changePage('film')">film room</button>
     </div>
   </div>
 
@@ -21,7 +21,11 @@
       
     }
   },
-
+  methods: {
+    changePage(link) {
+      this.$emit('changePage', { link })
+    }
+  }
 }
 
 </script>

@@ -1,8 +1,8 @@
 <template>
 
   <Header @changePage="changePage"/>
-  
-  <Homepage v-show="page == 'home'"/>
+
+  <Homepage v-show="page == 'home'" @changePage="changePage"/>
   <Film v-show="page == 'film'"/>
   <Workout v-show="page == 'workout'"/>
 
