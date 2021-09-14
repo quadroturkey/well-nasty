@@ -45,9 +45,10 @@
   }
 
   video {
-    width: 100%;
+    min-width: 100%;
     height: auto;
-    max-height: 700px;
+    max-height: 575px;
+    object-fit: cover;
   }
 
   .film-btn {
