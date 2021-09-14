@@ -3,7 +3,7 @@
   <div class="container">
     <img class="logo" src="/logo.png">
     <div class="links">
-      <a class="link" v-for="link in links" :key="link" :href="'/' + link" @click="navigate(link)">{{ link }}</a>
+      <a class="link" v-for="link in links" :key="link" @click="changePage(link)">{{ link }}</a>
     </div>
   </div>
 
@@ -19,8 +19,8 @@
       }
     },
     methods: {
-      navigate(link) {
-        console.log('link clicked: ', link)
+      changePage(link) {
+        this.$emit('changePage', { link })
       }
     }
   }
@@ -51,6 +51,7 @@
     font-size: 1.5rem;
     text-decoration: none;
     text-transform: capitalize;
+    cursor: pointer;
   }
 
   .link:hover {
